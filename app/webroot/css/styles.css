@@ -1,0 +1,305 @@
+@import url("table.css");
+
+/* Reset */
+
+html, body { margin: 0; padding: 0; border: 0;
+    background: transparent; font-size:12px; }
+
+div, span, article, aside, footer, header, hgroup, nav, section,
+h1, h2, h3, h4, h5, h6, p, blockquote, a, ol, ul, li,
+table, tr, th, td, tbody, tfoot, thead {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+img 	{ margin:0; padding:0; border:0; }
+
+table, tr, th, td, tbody, tfoot, thead {
+    margin: 0; padding: 0; border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+input, select, textarea, form, fieldset {
+    margin: 0; padding: 0; border: 0;
+}
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+    display:block; }
+
+h1, h2, h3, h4, h5, h6, p, li, blockquote, td, th, a, caption, em, strong, strike {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:100%;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 100%;
+    text-indent: 0;
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+}
+
+ol, ul { list-style: none; }
+
+/* Global */
+
+html 	{	}
+body	{ background-color: #000000;	}
+
+
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; color: #000; }
+
+h1 { font-size:24px; }
+h2 { font-size:20px; }
+h3 { font-size:16px; }
+h4 { font-size:14px; }
+h5 { font-size:14px; }
+h6 { font-size:14px; }
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
+
+
+
+/* Text Elements */
+
+p           	{ color:#000; font-size:12px; line-height:150%;  }
+p .left			{ margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p .right 		{ margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+
+a           	{  }
+a:link			{ color: #00f;  }
+a:visited		{ color: #0f0;  }
+a:active		{ color: #000;  }
+a:focus			{ color: #666;  }
+a:hover     	{ color: #f00;  }
+
+blockquote  	{ color:#000; font-size:12px; }
+
+strong      	{ font-weight: bold; }
+em		      	{ font-style: italic; }
+
+/* Images */
+
+
+
+/* Lists */
+
+ul          	{  }
+ol          	{ list-style-type:decimal; }
+
+ul li		    { color:#000; font-size:12px; }
+ol li	     	{ color:#000; font-size:12px; }
+
+dl          	{  	}
+dt       		{  	}
+dd          	{ 	}
+
+
+
+/*-- Containers--*/
+#wrapper    {
+    width: 1000px;
+    margin: auto;
+    background-color: #fff;
+}
+#container  {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.welcome    {
+    text-align: center;
+    font-size: 40px;
+    color: #ee3322;
+    font-family: consolas;
+    margin-top: 10%;
+}
+
+#header     {
+    width: 1000px;
+    height:200px;
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:auto;
+}
+#slogan     {
+    float:right;
+    padding:10px;
+    color: #9E2424;
+}
+#navigation-top {
+    border-top:solid 1px #000;
+    border-bottom:1px #000 solid;
+    margin:10px 0px;
+    padding:10px 0px;
+    padding-left: 10px;;
+}
+#navigation-top li{
+    display: inline;
+    font-size: 1.5em;
+    padding-right: 15px;
+}
+#navigation-top a:link			{ color: #000;  }
+#navigation-top a:visited		{ color: #000;  }
+#navigation-top a:active		{ color: #F00;  }
+#navigation-top a:focus			{ color: #666;  }
+#navigation-top a:hover     	{ color: #F93;  font-weight:bold;  }
+
+#footer     {
+    width:1000px;
+    height:50px;
+    background-color: #CE9E23;
+    clear:both;
+}
+
+#footer p   {
+    font-style: italic;
+    font-size:1.0em;
+    margin:10px;
+    padding:15px;
+    text-align: center;
+}
+
+/** Forms **/
+form {
+    clear: both;
+    margin-right: 20px;
+    padding: 0;
+    width: 70%;
+
+}
+fieldset {
+    border: none;
+    margin-bottom: 1em;
+    padding: 16px 10px;
+}
+fieldset legend {
+    color: #e32;
+    font-size: 160%;
+    font-weight: bold;
+}
+fieldset fieldset {
+    margin-top: 0;
+    padding: 10px 0 0;
+}
+fieldset fieldset legend {
+    font-size: 120%;
+    font-weight: normal;
+}
+fieldset fieldset div {
+    clear: left;
+    margin: 0 20px;
+}
+form div {
+    clear: both;
+    margin-bottom: 1em;
+    padding: .5em;
+    vertical-align: text-top;
+}
+form .input {
+    color: #444;
+}
+form .required {
+    font-weight: bold;
+}
+form .required label:after {
+    color: #e32;
+    content: '*';
+    display:inline;
+}
+form div.submit {
+    border: 0;
+    clear: both;
+    margin-top: 10px;
+}
+label {
+    display: block;
+    font-size: 110%;
+    margin-bottom:3px;
+}
+input, textarea {
+    clear: both;
+    font-size: 100%;
+    font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
+    padding: 1%;
+    width:98%;
+    border: 1px solid #aa0000;
+}
+select {
+    clear: both;
+    font-size: 120%;
+    vertical-align: text-bottom;
+}
+select[multiple=multiple] {
+    width: 100%;
+}
+option {
+    font-size: 120%;
+    padding: 0 3px;
+}
+input[type=checkbox] {
+    clear: left;
+    float: left;
+    margin: 0px 6px 7px 2px;
+    width: auto;
+}
+div.checkbox label {
+    display: inline;
+}
+input[type=radio] {
+    float:left;
+    width:auto;
+    margin: 6px 0;
+    padding: 0;
+    line-height: 26px;
+}
+.radio label {
+    margin: 0 0 6px 20px;
+    line-height: 26px;
+}
+input[type=submit] {
+    display: inline;
+    font-size: 110%;
+    width: auto;
+}
+form .submit input[type=submit] {
+    background:#62af56;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
+    background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
+    background-image: -moz-linear-gradient(top, #76BF6B, #3B8230);
+    border-color: #2d6324;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
+    padding: 8px 10px;
+}
+form .submit input[type=submit]:hover {
+    background: #5BA150;
+}
+
+/* form error messages*/
+#flashMessage {
+    background-color: #00008b;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.form-error {
+    border: 1px solid #00008b;
+}
+
+.error-message {
+    background-color: #00008b;
+    color: white;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    width: 100%;
+}
